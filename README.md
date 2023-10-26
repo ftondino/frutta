@@ -1,27 +1,50 @@
 # Frutta
+Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimentazione sana e plant based, offrendo la possibilità di ricercare frutta e trovarne le informazioni nutrizionali. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+![hero](https://i.imgur.com/ive9n9F.png)
 
-## Development server
+## Tecnologie e Framework utilizzati
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**
+- **FruityVice API**: Utilizzata per ottenere dati nutrizionali dei frutti.
+- **Pexels API**: Utilizzata per associare un'immagine ad ogni frutto
+- **Bootstrap**: Framework front-end utilizzato per la progettazione e la resa dell'interfaccia utente.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Caratteristiche principali
 
-## Build
+### Visualizza un elenco di frutti disponibili, ottenuti tramite le API di FruityVice.
+![elenco frutti](https://i.imgur.com/pwKzyxt.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Offre una funzionalità di ricerca per trovare facilmente un frutto specifico.
+![ricerca frutti](https://i.imgur.com/r3PG69U.png)
+### Mostra informazioni dettagliate sul contenuto nutrizionale di ciascun frutto.
+![risultati](https://i.imgur.com/LgFNrzL.png)
+## Prerequisiti
 
-## Running unit tests
+Assicurati di avere:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js
+- Angular CLI
+  
+```
+npm install -g @angular/cli
+```
 
-## Running end-to-end tests
+## Installazione
+1. Clona questo repository sul tuo computer.
+2. Naviga nella cartella del progetto:
+```
+cd nome-del-progetto
+```
+3. Installa le dipendenze:
+```
+npm install
+```
+## Avvio locale
+Esegui il seguente comando per avviare il server di sviluppo:
+```
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
