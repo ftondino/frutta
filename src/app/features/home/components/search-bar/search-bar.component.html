@@ -1,0 +1,21 @@
+<div class="input-group">
+  <input
+    [(ngModel)]="searchTerm"
+    (input)="fruitService.searchFruits(searchTerm || '')"
+    type="text"
+    class="form-control position-relative"
+  />
+  <i class="bi bi-search position-absolute"></i>
+  <div
+    *ngIf="searchTerm && fruitService.filteredFruits.length > 0"
+    class="dropdown-menu show w-100 p-0 border-0 shadow"
+  >
+    <button
+      *ngFor="let fruit of fruitService.filteredFruits"
+      (click)="goToFruitDetails(fruit.id)"
+      class="dropdown-item"
+    >
+      {{ fruit.name }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+  <div *ngIf="fruitService.noFruitsFound">Frutto non trovato</div>
+
+  <div class="col" *ngFor="let fruit of fruitService.filteredFruits">
+    <div class="col d-flex justify-content-center">
+      <div
+        class="card card-cover h-100 w-75 overflow-hidden text-bg-dark shadow p-3 mb-6 bg-white rounded"
+      >
+        <img [src]="fruit.image" />
+        <div class="container"></div>
+        <div
+          class="text-container d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1"
+        >
+          <h5 class="mb-4 text-center">{{ fruit.name }}</h5>
+        </div>
+        <div
+          class="click"
+          (click)="fruitDetails(fruit.id)"
+          onmouseover="this.parentElement.style.transform='scale(1.1)';"
+          onmouseout="this.parentElement.style.transform='scale(1)';"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
