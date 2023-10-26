@@ -1,63 +1,65 @@
-<div class="container my-3">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb p-3 rounded-3">
-      <li class="breadcrumb-item">
-        <a (click)="fruitService.getFruits()" routerLink="">All fruits</a>
-      </li>
-
-      <li class="breadcrumb-item active" aria-current="page">
-        {{ fruit?.name }}
-      </li>
-    </ol>
-  </nav>
-</div>
-<br />
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card mb-4 shadow p-3 mb-5 bg-body rounded nutrition">
-        <div class="card-body">
-          <div class="row align-items-center mb-4">
-            <div class="col">
-              <h4 class="mb-2">Nutrition Facts</h4>
-            </div>
-          </div>
-          <div class="container h-100">
-            <div class="justify-content-center align-items-center">
-              <div class="row">
-                <div class="col-md-5">
-                  <img
-                    [src]="fruit?.image"
-                    class="img-fluid rounded-circle"
-                    alt="..."
-                  />
-                </div>
+  <div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-2 rounded-3">
+        <li class="breadcrumb-item">
+          <a (click)="fruitService.getFruits()" routerLink="">All fruits</a>
+        </li>
 
-                <div class="col-md-6 my-auto">
-                  <h5 class="card-title">{{ fruit?.name }}</h5>
-                  <div>
-                    <span class="card-text">
-                      <small class="text-body-secondary">Family: </small>
-                    </span>
-                    <span class="card-text mb-0"
-                      ><small>{{ fruit?.family }}</small></span
-                    >
+        <li class="breadcrumb-item active" aria-current="page">
+          {{ fruit?.name }}
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <br />
+  <div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow p-3 mb-5 bg-body rounded nutrition h-100">
+          <div class="card-body">
+            <div class="row align-items-center mb-4">
+              <div class="col">
+                <h4 class="mb-2">Nutrition Facts</h4>
+              </div>
+            </div>
+            <div class="container h-100">
+              <div class="justify-content-center align-items-center">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img
+                      [src]="fruit?.image"
+                      class="img-fluid rounded-circle"
+                      alt="..."
+                    />
                   </div>
-                  <div>
-                    <span class="card-text">
-                      <small class="text-body-secondary">Order: </small>
-                    </span>
-                    <span class="card-text mb-0"
-                      ><small>{{ fruit?.order }}</small></span
-                    >
-                  </div>
-                  <div>
-                    <span class="card-text">
-                      <small class="text-body-secondary">Genus: </small>
-                    </span>
-                    <span class="card-text mb-0"
-                      ><small>{{ fruit?.genus }}</small></span
-                    >
+
+                  <div class="col-md-6 my-auto">
+                    <h5 class="card-title">{{ fruit?.name }}</h5>
+                    <div>
+                      <span class="card-text">
+                        <small class="text-body-secondary">Family: </small>
+                      </span>
+                      <span class="card-text mb-0"
+                        ><small>{{ fruit?.family }}</small></span
+                      >
+                    </div>
+                    <div>
+                      <span class="card-text">
+                        <small class="text-body-secondary">Order: </small>
+                      </span>
+                      <span class="card-text mb-0"
+                        ><small>{{ fruit?.order }}</small></span
+                      >
+                    </div>
+                    <div>
+                      <span class="card-text">
+                        <small class="text-body-secondary">Genus: </small>
+                      </span>
+                      <span class="card-text mb-0"
+                        ><small>{{ fruit?.genus }}</small></span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -65,47 +67,51 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-8">
-      <table class="table table-bordered shadow p-3 mb-5 bg-body rounded">
-        <tbody>
-          <tr class="border-b border-black">
-            <td class="py-2 font-medium border-r border-black">Serving Size</td>
-            <td class="py-2 border-l border-black">
-              <input
-                type="number"
-                [(ngModel)]="servingSize"
-                (change)="onServingSizeChange($event)"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Amount Per Serving</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Calories</td>
-            <td>{{ fruit?.nutritions?.calories }}</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Fat</td>
-            <td>{{ fruit?.nutritions?.fat }}g</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Sugar</td>
-            <td>{{ fruit?.nutritions?.sugar }}g</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Carbohydrates</td>
-            <td>{{ fruit?.nutritions?.carbohydrates }}g</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Protein</td>
-            <td>{{ fruit?.nutritions?.protein }}g</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="col-md-8">
+        <table
+          class="table table-bordered shadow p-3 mb-5 bg-body rounded h-100"
+        >
+          <tbody>
+            <tr class="border-b border-black">
+              <td class="py-2 font-medium border-r border-black">
+                Serving Size
+              </td>
+              <td class="py-2 border-l border-black">
+                <input
+                  type="number"
+                  [(ngModel)]="servingSize"
+                  (change)="onServingSizeChange($event)"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Amount Per Serving</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Calories</td>
+              <td>{{ fruit?.nutritions?.calories }}</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Fat</td>
+              <td>{{ fruit?.nutritions?.fat }}g</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Sugar</td>
+              <td>{{ fruit?.nutritions?.sugar }}g</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Carbohydrates</td>
+              <td>{{ fruit?.nutritions?.carbohydrates }}g</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Protein</td>
+              <td>{{ fruit?.nutritions?.protein }}g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
