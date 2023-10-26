@@ -1,5 +1,5 @@
 # Frutta
-Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimentazione sana e plant based, offrendo un elenco di frutti con informazioni nutrizionali. 
+Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimentazione sana e plant based, offrendo la possibilità di ricercare frutta e trovarne le informazioni nutrizionali. 
 
 ![hero](https://i.imgur.com/ive9n9F.png)
 
