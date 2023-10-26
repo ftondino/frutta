@@ -44,3 +44,10 @@
 .text-light {
   color: #ffeded;
 }
+
+@media screen and (max-width: 430px) {
+  .subtitle {
+    font-size: 17px;
+    width: 120%;
+  }
+}

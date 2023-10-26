@@ -20,6 +20,5 @@ export class FruitCardComponent implements OnInit {
 
   fruitDetails(id: number) {
     this.router.navigate(['/home/fruit-details', id]);
-    console.log(`Card clicked: ${id}`);
   }
 }

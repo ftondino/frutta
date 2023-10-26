@@ -7,3 +7,38 @@ img {
   height: 100px;
   object-fit: cover;
 }
+@media screen and (max-width: 1281px) {
+  img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .card-title {
+    font-size: 19px;
+  }
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .containet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+}

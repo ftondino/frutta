@@ -14,8 +14,8 @@
   </div>
   <br />
   <div>
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row details-container">
+      <div class="col-md-5">
         <div class="card mb-4 shadow p-3 mb-5 bg-body rounded nutrition h-100">
           <div class="card-body">
             <div class="row align-items-center mb-4">
@@ -25,7 +25,7 @@
             </div>
             <div class="container h-100">
               <div class="justify-content-center align-items-center">
-                <div class="row">
+                <div class="row containet-content">
                   <div class="col-md-5">
                     <img
                       [src]="fruit?.image"
@@ -34,13 +34,13 @@
                     />
                   </div>
 
-                  <div class="col-md-6 my-auto">
+                  <div class="col-md-7 my-auto">
                     <h5 class="card-title">{{ fruit?.name }}</h5>
                     <div>
                       <span class="card-text">
                         <small class="text-body-secondary">Family: </small>
                       </span>
-                      <span class="card-text mb-0"
+                      <span class="card-text"
                         ><small>{{ fruit?.family }}</small></span
                       >
                     </div>
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-7">
         <table
           class="table table-bordered shadow p-3 mb-5 bg-body rounded h-100"
         >
@@ -79,6 +79,7 @@
               </td>
               <td class="py-2 border-l border-black">
                 <input
+                  class="w-50"
                   type="number"
                   [(ngModel)]="servingSize"
                   (change)="onServingSizeChange($event)"

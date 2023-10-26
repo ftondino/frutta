@@ -1,7 +1,7 @@
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
   <div *ngIf="fruitService.noFruitsFound">Fruit not found :(</div>
 
-  <div class="col" *ngFor="let fruit of fruitService.filteredFruits">
+  <div class="col" *ngFor="let fruit of fruitService.displayedFruits">
     <div class="col d-flex justify-content-center">
       <div
         class="card card-cover h-100 w-75 overflow-hidden text-bg-dark shadow p-3 mb-6 bg-white rounded"
@@ -22,4 +22,15 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="text-center pb-5 my-5">
+  <button
+    type="button"
+    class="btn btn-primary"
+    *ngIf="!fruitService.isFiltering && fruitService.hasMoreFruits()"
+    (click)="fruitService.loadMore()"
+  >
+    Carica altro
+  </button>
 </div>
