@@ -1,6 +1,6 @@
 # Frutta
-Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimentazione sana e plant based, offrendo la possibilità di ricercare frutta e trovarne le informazioni nutrizionali. 
-![Vai al sito](https://frutta-master-dgny37pon-floras-projects-871f3568.vercel.app/home)
+Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimentazione sana e plant based, offrendo la possibilità di ricercare frutta e trovarne le informazioni nutrizionali. <br>
+[Vai al sito](https://frutta-master-dgny37pon-floras-projects-871f3568.vercel.app/home)
 
 ![hero](https://i.imgur.com/ive9n9F.png)
 
