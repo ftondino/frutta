@@ -45,7 +45,7 @@ npm install
 ```
 ### Crea una build di produzione del tuo progetto Angular
 ```
-npm run build
+ng build --configuration production
 ```
 ### Avvia il tuo server Express
 ```
