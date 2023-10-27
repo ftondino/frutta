@@ -10,7 +10,7 @@ Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimen
 - **Node.js e Express.js**: utilizzati per creare il server
 - **FruityVice API**: Utilizzata per ottenere dati nutrizionali dei frutti.
 - **Pexels API**: Utilizzata per associare un'immagine ad ogni frutto
-- **Bootstrap**: Framework front-end utilizzato per la progettazione e la resa dell'interfaccia utente.
+- **Bootstrap**: Utilizzato per la progettazione e la resa dell'interfaccia utente.
 
 
 ## Caratteristiche principali
