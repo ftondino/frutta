@@ -58,18 +58,13 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "frutta:build",
-            "proxyConfig": "proxy.conf.json"
-          },
+
           "configurations": {
             "production": {
-              "browserTarget": "frutta:build:production",
-              "proxyConfig": "proxy.conf.json"
+              "browserTarget": "frutta:build:production"
             },
             "development": {
-              "browserTarget": "frutta:build:development",
-              "proxyConfig": "proxy.conf.json"
+              "browserTarget": "frutta:build:development"
             }
           },
           "defaultConfiguration": "development"
