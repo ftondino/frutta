@@ -7,6 +7,7 @@ Benvenuto in **Frutta**, un'applicazione angular dedicata a promuovere un'alimen
 ## Tecnologie e Framework utilizzati
 
 - **Angular**
+- **Node.js e Express.js**: utilizzati per creare il server
 - **FruityVice API**: Utilizzata per ottenere dati nutrizionali dei frutti.
 - **Pexels API**: Utilizzata per associare un'immagine ad ogni frutto
 - **Bootstrap**: Framework front-end utilizzato per la progettazione e la resa dell'interfaccia utente.
@@ -42,10 +43,17 @@ cd nome-del-progetto
 ```
 npm install
 ```
-## Avvio locale
-Esegui il seguente comando per avviare il server di sviluppo:
+### Crea una build di produzione del tuo progetto Angular
 ```
-ng serve
+npm run build
+```
+### Avvia il tuo server Express
+```
+npm start
+```
+### Il sito dovrebbe trovarsi a questo link
+```
+http://localhost:8080/
 ```
 
 
